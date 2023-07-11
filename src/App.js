@@ -3,7 +3,16 @@ import HeroSlider from 'hero-slider';
 import { Typography, Container, Grid, Card, CardContent } from '@mui/material';
 import Hero from './pages/Hero';
 import { SiMui, SiReact, SiVisualstudiocode, SiCloudflare, SiGithub, SiFigma } from "react-icons/si";
+import { makeStyles } from '@material-ui/core/styles';
 
+const useStyles = makeStyles({
+  whiteText: {
+    color: 'white',
+  },
+  largerIcon: {
+    fontSize: '48px',
+  },
+});
 
 const App = () => {
   return (
@@ -62,6 +71,7 @@ const AboutSection = () => {
 };
 
 const TechnologyStackSection = () => {
+  const classes = useStyles()
   return (
     <div>
       <Container sx={{ p: 5 }}>
@@ -77,27 +87,27 @@ const TechnologyStackSection = () => {
           <Container sx={{ p: 3, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Grid container spacing={6} justify="center" alignItems="center">
               <Grid item>
-                <SiMui />
+                <SiMui className={classes.largerIcon} />
                 <Typography sx={{ p: 3 }} variant="body1">Google MUI</Typography>
               </Grid>
               <Grid item>
-                <SiReact />
+                <SiReact className={classes.largerIcon} />
                 <Typography sx={{ p: 3 }} variant="body1">ReactJS</Typography>
               </Grid>
               <Grid item>
-                <SiVisualstudiocode />
+                <SiVisualstudiocode className={classes.largerIcon} />
                 <Typography sx={{ p: 3 }} variant="body1">VS Code</Typography>
               </Grid>
               <Grid item>
-                <SiCloudflare />
+                <SiCloudflare className={classes.largerIcon} />
                 <Typography sx={{ p: 3 }} variant="body1">Cloudflare</Typography>
               </Grid>
               <Grid item>
-                <SiGithub />
+                <SiGithub className={classes.largerIcon} />
                 <Typography sx={{ p: 3 }} variant="body1">GitHub</Typography>
               </Grid>
               <Grid item>
-                <SiFigma />
+                <SiFigma className={classes.largerIcon} />
                 <Typography sx={{ p: 3 }} variant="body1">Figma</Typography>
               </Grid>
             </Grid>
