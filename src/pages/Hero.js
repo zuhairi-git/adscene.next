@@ -33,27 +33,26 @@ export default function BasicSlider() {
         onAfterSliding: (nextSlide) => console.debug('onAfterSliding(nextSlide): ', nextSlide),
       }}
     >
-      <Overlay>
-        <Wrapper>
-          <Typography variant="h2" className={classes.whiteText}>AD Scene</Typography>
-          <div style={{ color: 'white' }}>
-            <Typography variant="subtitle1" className={classes.whiteText}>
-              <Subtitle>
-                Our goal is to transform your ideas or products into captivating visuals and effective advertisements. Whether you have a concept for tangible or digital products, we specialize in bringing your visions to life. From defining your ideas to executing the advertising process, we are here to help you showcase your offerings to the world.
-              </Subtitle>
-            </Typography>
-
-          </div>
-        </Wrapper>
-      </Overlay>
-
       <Slide
         shouldRenderMask
         label="Digital Product Design"
         background={{
           backgroundImageSrc: imageOne,
         }}
-      />
+      >
+        <Overlay>
+          <Wrapper>
+            <Typography variant="h2" className={classes.whiteText}>
+              Digital Product Design
+            </Typography>
+            <div style={{ color: 'white' }}>
+              <Subtitle>
+                Customize your digital product designs to create visually appealing and user-friendly experiences.
+              </Subtitle>
+            </div>
+          </Wrapper>
+        </Overlay>
+      </Slide>
 
       <Slide
         shouldRenderMask
@@ -61,7 +60,20 @@ export default function BasicSlider() {
         background={{
           backgroundImageSrc: imageTwo,
         }}
-      />
+      >
+        <Overlay>
+          <Wrapper>
+            <Typography variant="h2" className={classes.whiteText}>
+              Prototype
+            </Typography>
+            <div style={{ color: 'white' }}>
+              <Subtitle>
+                Transform your ideas into interactive prototypes to visualize and validate your concepts.
+              </Subtitle>
+            </div>
+          </Wrapper>
+        </Overlay>
+      </Slide>
 
       <Slide
         shouldRenderMask
@@ -69,7 +81,20 @@ export default function BasicSlider() {
         background={{
           backgroundImageSrc: imageThree,
         }}
-      />
+      >
+        <Overlay>
+          <Wrapper>
+            <Typography variant="h2" className={classes.whiteText}>
+              UX Design
+            </Typography>
+            <div style={{ color: 'white' }}>
+              <Subtitle>
+                Craft seamless user experiences by understanding user needs and designing intuitive interfaces.
+              </Subtitle>
+            </div>
+          </Wrapper>
+        </Overlay>
+      </Slide>
 
       <Slide
         shouldRenderMask
@@ -77,7 +102,20 @@ export default function BasicSlider() {
         background={{
           backgroundImageSrc: imageFour,
         }}
-      />
+      >
+        <Overlay>
+          <Wrapper>
+            <Typography variant="h2" className={classes.whiteText}>
+              UI Design
+            </Typography>
+            <div style={{ color: 'white' }}>
+              <Subtitle>
+                Create visually stunning and aesthetically pleasing user interfaces to captivate your audience.
+              </Subtitle>
+            </div>
+          </Wrapper>
+        </Overlay>
+      </Slide>
 
       <MenuNav />
     </HeroSlider>
