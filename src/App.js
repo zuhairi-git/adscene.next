@@ -73,7 +73,7 @@ const TechnologyStackSection = () => {
           GitHub, and Figma.
         </Typography>
 
-        <div style={{}}>
+        <div style={{textAlign:'center'}}>
           <Container sx={{ p: 3, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Grid container spacing={6} justify="center" alignItems="center">
               <Grid item>
