@@ -5,10 +5,10 @@ import Wrapper from '../components/Wrapper';
 import Typography from '@material-ui/core/Typography';
 import Subtitle from '../components/Subtitle';
 
-const imageOne = require('../img/1x/product.jpg');
-const imageTwo = require('../img/1x/prototype.jpg');
-const imageThree = require('../img/1x/ux.jpg');
-const imageFour = require('../img/1x/ui.jpg');
+const imageOne = require('../img/2x/product.jpg');
+const imageTwo = require('../img/2x/prototype.jpg');
+const imageThree = require('../img/2x/ux.jpg');
+const imageFour = require('../img/2x/ui.jpg');
 
 const useStyles = makeStyles({
   whiteText: {
