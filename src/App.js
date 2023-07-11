@@ -79,7 +79,7 @@ const TechnologyStackSection = () => {
           Technology Stack
         </Typography>
         <Typography variant="body1" paragraph>
-          Our website is built using cutting-edge tools and technologies including Figma, ReactJS, VS Code, Cloudflare,
+          Our website is built using cutting-edge tools and technologies including Google MUI, ReactJS, VS Code, Cloudflare,
           GitHub, and Figma.
         </Typography>
 
