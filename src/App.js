@@ -2,6 +2,9 @@ import React from 'react';
 import HeroSlider from 'hero-slider';
 import { Typography, Container, Grid, Card, CardContent } from '@mui/material';
 import Hero from './pages/Hero';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
 
 const App = () => {
   return (
@@ -72,33 +75,33 @@ const TechnologyStackSection = () => {
         </Typography>
 
         <div style={{}}>
-        <Container sx={{ p: 3, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <Grid container spacing={6} justify="center" alignItems="center">
-            <Grid item>
-              <i className='fa fa-home'></i>
-              <Typography sx={{ p: 3 }}  variant="body1">Google MUI</Typography>
+          <Container sx={{ p: 3, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Grid container spacing={6} justify="center" alignItems="center">
+              <Grid item>
+                <FontAwesomeIcon icon="check-square" />
+                <Typography sx={{ p: 3 }} variant="body1">Google MUI</Typography>
+              </Grid>
+              <Grid item>
+                <FontAwesomeIcon icon="fa-react" />
+                <Typography sx={{ p: 3 }} variant="body1">ReactJS</Typography>
+              </Grid>
+              <Grid item>
+                <FontAwesomeIcon icon="check-square" />
+                <Typography sx={{ p: 3 }} variant="body1">VS Code</Typography>
+              </Grid>
+              <Grid item>
+                <FontAwesomeIcon icon="check-square" />
+                <Typography sx={{ p: 3 }} variant="body1">Cloudflare</Typography>
+              </Grid>
+              <Grid item>
+                <FontAwesomeIcon icon="check-square" />
+                <Typography sx={{ p: 3 }} variant="body1">GitHub</Typography>
+              </Grid>
+              <Grid item>
+                <FontAwesomeIcon icon="check-square" />
+                <Typography sx={{ p: 3 }} variant="body1">Figma</Typography>
+              </Grid>
             </Grid>
-            <Grid item>
-            <i className='fa fa-home'></i>
-              <Typography sx={{ p: 3 }} variant="body1">ReactJS</Typography>
-            </Grid>
-            <Grid item>
-            <i className='fa fa-home'></i>
-              <Typography sx={{ p: 3 }}  variant="body1">VS Code</Typography>
-            </Grid>
-            <Grid item>
-            <i className='fa fa-home'></i>
-              <Typography sx={{ p: 3 }}  variant="body1">Cloudflare</Typography>
-            </Grid>
-            <Grid item>
-            <i className='fa fa-home'></i>
-              <Typography sx={{ p: 3 }}  variant="body1">GitHub</Typography>
-            </Grid>
-            <Grid item>
-            <i className='fa fa-home'></i>
-              <Typography sx={{ p: 3 }}  variant="body1">Figma</Typography>
-            </Grid>
-          </Grid>
           </Container>
         </div>
 
