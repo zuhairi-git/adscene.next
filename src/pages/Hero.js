@@ -1,15 +1,24 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import HeroSlider, { Overlay, Slide, MenuNav } from 'hero-slider';
 import Wrapper from '../components/Wrapper';
-import Title from '../components/Title';
+import Typography from '@material-ui/core/Typography';
 import Subtitle from '../components/Subtitle';
 
-const imageOne = require('../img/1.jpg');
-const imageTwo = require('../img/2.jpg');
-const imageThree = require('../img/3.jpg');
-const imageFour = require('../img/4.jpg');
+const imageOne = require('../img/1x/product.jpg');
+const imageTwo = require('../img/1x/prototype.jpg');
+const imageThree = require('../img/1x/ux.jpg');
+const imageFour = require('../img/1x/ui.jpg');
+
+const useStyles = makeStyles({
+  whiteText: {
+    color: 'white',
+  },
+});
 
 export default function BasicSlider() {
+  const classes = useStyles();
+
   return (
     <HeroSlider
       height={'100vh'}
@@ -26,8 +35,15 @@ export default function BasicSlider() {
     >
       <Overlay>
         <Wrapper>
-          <Title>AD Scene</Title>
-          <Subtitle>Our goal is to transform your ideas or products into captivating visuals and effective advertisements. Whether you have a concept for tangible or digital products, we specialize in bringing your visions to life. From defining your ideas to executing the advertising process, we are here to help you showcase your offerings to the world..</Subtitle>
+          <Typography variant="h2" className={classes.whiteText}>AD Scene</Typography>
+          <div style={{ color: 'white' }}>
+            <Typography variant="subtitle1" className={classes.whiteText}>
+              <Subtitle>
+                Our goal is to transform your ideas or products into captivating visuals and effective advertisements. Whether you have a concept for tangible or digital products, we specialize in bringing your visions to life. From defining your ideas to executing the advertising process, we are here to help you showcase your offerings to the world.
+              </Subtitle>
+            </Typography>
+
+          </div>
         </Wrapper>
       </Overlay>
 
