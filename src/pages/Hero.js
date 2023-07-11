@@ -46,9 +46,9 @@ export default function BasicSlider() {
               Digital Product Design
             </Typography>
             <div style={{ color: 'white' }}>
-              <Subtitle>
+              <Typography variant="body1">
                 Customize your digital product designs to create visually appealing and user-friendly experiences.
-              </Subtitle>
+              </Typography>
             </div>
           </Wrapper>
         </Overlay>
@@ -67,9 +67,9 @@ export default function BasicSlider() {
               Prototype
             </Typography>
             <div style={{ color: 'white' }}>
-              <Subtitle>
+              <Typography variant="body1">
                 Transform your ideas into interactive prototypes to visualize and validate your concepts.
-              </Subtitle>
+              </Typography>
             </div>
           </Wrapper>
         </Overlay>
@@ -88,9 +88,9 @@ export default function BasicSlider() {
               UX Design
             </Typography>
             <div style={{ color: 'white' }}>
-              <Subtitle>
+              <Typography variant="body1">
                 Craft seamless user experiences by understanding user needs and designing intuitive interfaces.
-              </Subtitle>
+              </Typography>
             </div>
           </Wrapper>
         </Overlay>
@@ -109,9 +109,9 @@ export default function BasicSlider() {
               UI Design
             </Typography>
             <div style={{ color: 'white' }}>
-              <Subtitle>
+              <Typography variant="body1">
                 Create visually stunning and aesthetically pleasing user interfaces to captivate your audience.
-              </Subtitle>
+              </Typography>
             </div>
           </Wrapper>
         </Overlay>
