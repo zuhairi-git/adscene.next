@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import HeroSlider, { Overlay, Slide, MenuNav } from 'hero-slider';
 import Wrapper from '../components/Wrapper';
 import Typography from '@material-ui/core/Typography';
-import Subtitle from '../components/Subtitle';
 
 const imageOne = require('../img/2x/product.jpg');
 const imageTwo = require('../img/2x/prototype.jpg');
